@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">KOKO SHOP Control Guide</title>
+  <desc id="desc">Arabic guide explaining how to update the KOKO SHOP website via Google Sheets and Apps Script.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fbff"/>
+      <stop offset="100%" stop-color="#eef7ff"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f5ec4"/>
+      <stop offset="100%" stop-color="#00b9d6"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffb26b"/>
+      <stop offset="100%" stop-color="#ff8a5b"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#3a4a5a"/>
+    </marker>
+    <style>
+      .title { font: 700 42px 'Tahoma', 'Arial'; fill: #13213f; }
+      .stepTitle { font: 700 28px 'Tahoma', 'Arial'; fill: #13213f; }
+      .label { font: 500 22px 'Tahoma', 'Arial'; fill: #20314a; }
+      .small { font: 500 18px 'Tahoma', 'Arial'; fill: #56697f; }
+      .code { font: 700 20px 'Consolas', monospace; fill: #ffffff; }
+      .box { fill: #ffffff; stroke: #d4e4ff; stroke-width: 2; rx: 22; }
+      .blueBox { fill: url(#blue); }
+      .orangeBox { fill: url(#orange); }
+      .line { stroke: #3a4a5a; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .sheet { fill: #f5f8ff; stroke: #c8d8ff; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1100" fill="url(#bg)"/>
+  <text x="800" y="70" text-anchor="middle" class="title">دليل التحكم في KOKO SHOP</text>
+
+  <g>
+    <rect x="90" y="120" width="350" height="150" class="box"/>
+    <text x="265" y="165" text-anchor="middle" class="stepTitle">1. فتح Excel</text>
+    <text x="265" y="205" text-anchor="middle" class="label">افتح ملف Excel جاهز</text>
+    <text x="265" y="240" text-anchor="middle" class="small">أو استورد ملف CSV مباشرة</text>
+  </g>
+
+  <g>
+    <rect x="500" y="120" width="350" height="150" class="box"/>
+    <text x="675" y="165" text-anchor="middle" class="stepTitle">2. رفعه إلى Sheets</text>
+    <text x="675" y="205" text-anchor="middle" class="label">File → Import → Upload</text>
+    <text x="675" y="240" text-anchor="middle" class="small">ثم اختر ملف CSV</text>
+  </g>
+
+  <g>
+    <rect x="910" y="120" width="350" height="150" class="box"/>
+    <text x="1085" y="165" text-anchor="middle" class="stepTitle">3. Extensions</text>
+    <text x="1085" y="205" text-anchor="middle" class="label">انتقل إلى Extensions</text>
+    <text x="1085" y="240" text-anchor="middle" class="small">ثم Apps Script</text>
+  </g>
+
+  <g>
+    <rect x="1320" y="120" width="180" height="150" class="blueBox"/>
+    <text x="1410" y="175" text-anchor="middle" class="code">Apps</text>
+    <text x="1410" y="210" text-anchor="middle" class="code">Script</text>
+  </g>
+
+  <path d="M440 195 H500" class="line"/>
+  <path d="M850 195 H910" class="line"/>
+  <path d="M1260 195 H1320" class="line"/>
+
+  <g>
+    <rect x="90" y="360" width="700" height="250" class="sheet"/>
+    <text x="440" y="410" text-anchor="middle" class="stepTitle">الأوراق المطلوبة داخل Google Sheets</text>
+    <g class="label">
+      <text x="220" y="470">منتجات</text>
+      <text x="220" y="505">مقالات</text>
+      <text x="220" y="540">إعدادات</text>
+      <text x="220" y="575">تصنيفات</text>
+      <text x="520" y="470">رياضات</text>
+      <text x="520" y="505">تواصل</text>
+      <text x="520" y="540">طرق الدفع</text>
+      <text x="520" y="575">منصات</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="850" y="360" width="660" height="250" class="box"/>
+    <text x="1180" y="410" text-anchor="middle" class="stepTitle">4. وضع Code.gs</text>
+    <text x="1180" y="465" text-anchor="middle" class="label">افتح Apps Script</text>
+    <text x="1180" y="500" text-anchor="middle" class="label">أنشئ ملف Code.gs</text>
+    <text x="1180" y="535" text-anchor="middle" class="label">وضع محتوى الملف من:</text>
+    <text x="1180" y="570" text-anchor="middle" class="small">google_apps_script / Code.gs</text>
+  </g>
+
+  <g>
+    <rect x="90" y="670" width="500" height="240" class="box"/>
+    <text x="340" y="715" text-anchor="middle" class="stepTitle">5. Deploy</text>
+    <text x="340" y="765" text-anchor="middle" class="label">Deploy → New deployment</text>
+    <text x="340" y="800" text-anchor="middle" class="label">Choose type: Web App</text>
+    <text x="340" y="835" text-anchor="middle" class="small">اجعل التنفيذ Public / Anyone</text>
+  </g>
+
+  <g>
+    <rect x="650" y="670" width="500" height="240" class="box"/>
+    <text x="900" y="715" text-anchor="middle" class="stepTitle">6. نسخ رابط /exec</text>
+    <text x="900" y="765" text-anchor="middle" class="label">انسخ الرابط النهائي</text>
+    <text x="900" y="800" text-anchor="middle" class="small">مثال:</text>
+    <text x="900" y="835" text-anchor="middle" class="small">https://script.google.com/macros/s/....../exec</text>
+  </g>
+
+  <g>
+    <rect x="1210" y="670" width="300" height="240" class="orangeBox"/>
+    <text x="1360" y="720" text-anchor="middle" class="code">7. config.js</text>
+    <text x="1360" y="780" text-anchor="middle" class="code">appScriptUrl</text>
+    <text x="1360" y="825" text-anchor="middle" class="code">= URL</text>
+  </g>
+
+  <path d="M590 770 H650" class="line"/>
+  <path d="M1150 770 H1210" class="line"/>
+
+  <g>
+    <rect x="490" y="960" width="620" height="80" class="blueBox"/>
+    <text x="800" y="1010" text-anchor="middle" class="code">8. تشغيل الموقع وبدء التعديل من Google Sheets</text>
+  </g>
+</svg>
