@@ -1,0 +1,5 @@
+id,title,icon,description,showOnSite
+1,الدفع عند الاستلام,💵,متاح في بعض المناطق,TRUE
+2,بطاقات بنكية,💳,بطاقات Visa/MasterCard,TRUE
+3,محافظ إلكترونية,📱,Apple Pay / Google Pay / أخرى,TRUE
+4,دفع آمن,🔒,طرق الدفع والتوصيل تختلف حسب المتجر والمنصة.,TRUE
