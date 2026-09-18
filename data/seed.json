@@ -1,0 +1,44 @@
+{
+  "settings": {
+    "hero_title": "KOKO SHOP",
+    "hero_text": "اكتشف منتجات عملية، عصرية، ومفيدة للمنزل، الدراسة، الرياضة، السفر، والمطبخ.",
+    "music_url": "",
+    "music_name": "KOKO SHOP Audio",
+    "show_platforms": true,
+    "amazon_disclosure": "بصفتي مشاركًا لأمازون، فإنني أكسب من عمليات الشراء المؤهلة.",
+    "payment_title": "طرق الدفع والتوصيل تختلف حسب المتجر والمنصة.",
+    "delivery_text": "التوصيل يختلف حسب المنطقة والمنصة.",
+    "site_title": "KOKO SHOP"
+  },
+  "categories": [
+    { "id": 1, "name": "الإلكترونيات", "icon": "📱" },
+    { "id": 2, "name": "الكمبيوتر والمكتب", "icon": "💻" },
+    { "id": 3, "name": "المدرسة والدراسة", "icon": "📚" },
+    { "id": 4, "name": "المنزل", "icon": "🏠" },
+    { "id": 5, "name": "الفود والمطبخ", "icon": "🍳" }
+  ],
+  "sports": [
+    { "id": 1, "name": "Hiking", "icon": "🥾", "items": ["حقائب", "أحذية", "ماء"] },
+    { "id": 2, "name": "Mountain Bike", "icon": "🚴", "items": ["خوذة", "قفازات", "إكسسوارات"] },
+    { "id": 3, "name": "Diving", "icon": "🤿", "items": ["ملابس سباحة", "معدات", "أحزمة"] }
+  ],
+  "socials": [
+    { "name": "facebook", "label": "Facebook", "url": "https://www.facebook.com/profile.php?id=61593947162280" },
+    { "name": "instagram", "label": "Instagram", "url": "https://www.instagram.com/himakokoabdalla/" },
+    { "name": "youtube", "label": "YouTube", "url": "https://www.youtube.com/@kokoabdallahima" },
+    { "name": "tiktok", "label": "TikTok", "url": "https://www.tiktok.com/@kokoabdallahima" },
+    { "name": "threads", "label": "Threads", "url": "https://www.threads.com/@kokoshoppingstore" },
+    { "name": "snapchat", "label": "Snapchat", "url": "https://www.snapchat.com/add/koko-shoppingst" }
+  ],
+  "paymentMethods": [
+    { "id": 1, "title": "الدفع عند الاستلام", "icon": "💵", "description": "متاح حسب المنطقة", "showOnSite": true },
+    { "id": 2, "title": "بطاقات بنكية", "icon": "💳", "description": "بطاقات مصرفية", "showOnSite": true },
+    { "id": 3, "title": "محافظ إلكترونية", "icon": "📱", "description": "Apple Pay / Google Pay", "showOnSite": true },
+    { "id": 4, "title": "دفع آمن", "icon": "🔒", "description": "طرق الدفع والتوصيل تختلف حسب المتجر والمنصة.", "showOnSite": true }
+  ],
+  "platforms": [
+    { "id": 1, "name": "Amazon", "url": "#", "showOnSite": true, "affiliateUrl": "#", "notes": "Amazon affiliate when available" },
+    { "id": 2, "name": "Temu", "url": "#", "showOnSite": true, "affiliateUrl": "#", "notes": "منصة تسوق متنوعة" },
+    { "id": 3, "name": "Noon", "url": "#", "showOnSite": true, "affiliateUrl": "#", "notes": "منصة تسوق محلية" }
+  ]
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOKO SHOP</title>
+    <meta name="description" content="KOKO SHOP | متجر إلكتروني عربي احترافي مع محتوى أصلي، Google Sheets، وأفلييت URLs." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div class="container nav-wrap">
+          <div class="brand">
+            <div class="brand-mark">
+              <span>K</span>
+            </div>
+            <div class="brand-text">
+              <strong>KOKO</strong>
+              <small>SHOP</small>
+            </div>
+          </div>
+
+          <nav class="main-nav" id="mainNav"></nav>
+
+          <div class="nav-actions">
+            <button class="search-toggle" aria-label="البحث">🔎</button>
+            <a href="#featured" class="btn btn-primary">تسوق الآن</a>
+          </div>
+        </div>
+
+        <div class="search-panel hidden" id="searchPanel">
+          <div class="container">
+            <input type="text" id="searchInput" placeholder="ابحث عن منتج..." />
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <span class="eyebrow">تسوق بذكاء • استمتع بتجربة premium</span>
+              <h1 id="heroTitle">KOKO SHOP</h1>
+              <p id="heroText">اكتشف منتجات عملية، عصرية، ومفيدة للمنزل، الدراسة، الرياضة، السفر، والمطبخ.</p>
+              <div class="hero-actions">
+                <a href="#featured" class="btn btn-primary">أحدث المنتجات</a>
+                <a href="#guides" class="btn btn-light">دليل الشراء</a>
+              </div>
+
+              <div class="hero-metrics">
+                <div>
+                  <strong>+1.2k</strong>
+                  <span>منتج مختار</span>
+                </div>
+                <div>
+                  <strong>4.9/5</strong>
+                  <span>تجربة عميل</span>
+                </div>
+                <div>
+                  <strong>24/7</strong>
+                  <span>دعم</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-visual">
+              <div class="hero-card hero-card-main">
+                <div class="mini-tag">أفضل العروض</div>
+                <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80" alt="shopping" />
+              </div>
+              <div class="floating-badge">توصيل سريع</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="category-strip">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <span class="eyebrow">الأقسام</span>
+                <h2>اكتشف حسب احتياجك</h2>
+              </div>
+            </div>
+            <div class="category-grid" id="categoriesGrid"></div>
+          </div>
+        </section>
+
+        <section class="featured" id="featured">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <span class="eyebrow">منتجات مميزة</span>
+                <h2>أفضل اختيارات KOKO SHOP</h2>
+              </div>
+              <button class="btn btn-ghost" id="filterFeaturedBtn">عرض المزيد</button>
+            </div>
+            <div class="product-grid" id="productsGrid"></div>
+          </div>
+        </section>
+
+        <section class="guides" id="guides">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <span class="eyebrow">مقالات</span>
+                <h2>دليل الشراء والمقالات</h2>
+              </div>
+            </div>
+            <div class="articles-grid" id="articlesGrid"></div>
+          </div>
+        </section>
+
+        <section class="sports-section">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <span class="eyebrow">رياضة ومغامرات</span>
+                <h2>تجهيزك لرحلاتك وأجوائك النشطة</h2>
+              </div>
+            </div>
+            <div class="sports-grid" id="sportsGrid"></div>
+          </div>
+        </section>
+
+        <section class="payment-section" id="paymentMethodsSection">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <span class="eyebrow">طرق الدفع</span>
+                <h2 id="paymentTitle">طرق الدفع والتوصيل تختلف حسب المتجر والمنصة.</h2>
+              </div>
+            </div>
+            <div class="payment-grid" id="paymentsGrid"></div>
+          </div>
+        </section>
+
+        <section class="social-section">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <span class="eyebrow">تواصل معنا</span>
+                <h2>تابعنا على وسائل التواصل</h2>
+              </div>
+            </div>
+            <div class="social-grid" id="socialGrid"></div>
+          </div>
+        </section>
+
+        <section class="platforms-section">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <span class="eyebrow">المنصات</span>
+                <h2>المنصات التي نعمل معها</h2>
+              </div>
+            </div>
+            <div class="platform-grid" id="platformGrid"></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-grid">
+          <div>
+            <div class="brand">
+              <div class="brand-mark">
+                <span>K</span>
+              </div>
+              <div class="brand-text">
+                <strong>KOKO</strong>
+                <small>SHOP</small>
+              </div>
+            </div>
+
+            <p>
+              متجر KOKO SHOP يهدف إلى تقديم محتوى تجاري مفيد، تجارب شراء ذكية،
+              ومراجع متكاملة للهواتف، المنزل، الدراسة، السفر، والرياضة.
+            </p>
+
+            <div class="disclosure-box">
+              <strong>إفصاح Amazon:</strong>
+              <p id="amazonDisclosure">بصفتي مشاركًا لأمازون، فإنني أكسب من عمليات الشراء المؤهلة.</p>
+            </div>
+          </div>
+
+          <div>
+            <h4>روابط سريعة</h4>
+            <ul>
+              <li><a href="#featured">المنتجات المميزة</a></li>
+              <li><a href="#guides">المقالات</a></li>
+              <li><a href="#paymentMethodsSection">طرق الدفع</a></li>
+              <li><a href="#social-section">تواصل</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>الخدمة</h4>
+            <ul>
+              <li>الدفع عند الاستلام</li>
+              <li>توصيل حسب المنطقة</li>
+              <li>سياسة الإرجاع</li>
+              <li>مساندة العملاء</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>التواصل</h4>
+            <ul>
+              <li>WhatsApp: 01508871599</li>
+              <li>Email: hello@kokoshop.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="container">
+            <p>© 2026 KOKO SHOP • جميع الحقوق محفوظة.</p>
+          </div>
+        </div>
+      </footer>
+
+      <div class="music-player" id="musicPlayerWrap">
+        <div class="music-player-box">
+          <button id="playPauseBtn" class="play-btn" aria-label="تشغيل الموسيقى">▶</button>
+          <div class="music-info">
+            <strong id="musicName">KOKO SHOP Audio</strong>
+            <small>Music</small>
+          </div>
+          <audio id="musicAudio" preload="none"></audio>
+        </div>
+      </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
