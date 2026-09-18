@@ -1,0 +1,5 @@
+id,title,description,image,price,oldPrice,platform,category,subcategory,url,published,delivery,cashOnDelivery,returnPolicy,discount,badge,buttonText,affiliateUrl
+1,ماوس لاسلكي احترافي,ماوس مريح وسريع للاستخدام اليومي,https://example.com/image1.jpg,450,620,Amazon,الحاسب والمكتب,ماوس وكيبورد,#,TRUE,توصيل حسب المنطقة,TRUE,إرجاع خلال 7 أيام,27%,الأكثر طلبًا,اشترِ الآن,#
+2,حقيبة ظهر للرحلات,حقيبة عملية ومريحة للرحلات,https://example.com/image2.jpg,760,980,Noon,الرياضة والمغامرات,Camping,#,TRUE,توصيل سريع,TRUE,إرجاع خلال 10 أيام,22%,مميز,اشترِ الآن,#
+3,طقم أدوات تنظيف منزلية,مستوى عالي من الجودة مناسب للمنزل والرفاهية اليومية,https://example.com/image3.jpg,320,430,Temu,المنزل,تنظيف,#,TRUE,توصيل حسب المنطقة,FALSE,إرجاع خلال 7 أيام,25%,تخفيضات,اشترِ الآن,#
+4,سماعات لاسلكية مريحة,صوت نقي وإلغاء ضوضاء جزئي ومناسب للاستخدام اليومي,https://example.com/image4.jpg,610,820,Amazon,الإلكترونيات,سماعات,#,TRUE,توصيل سريع,TRUE,إرجاع خلال 7 أيام,26%,مميز,اشترِ الآن,#
